@@ -1,5 +1,5 @@
 package dinossauro;
 
-public enum Humor {
+enum Humor {
     TRISTE, FELIZ
 }
