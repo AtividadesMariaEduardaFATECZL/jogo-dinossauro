@@ -40,11 +40,11 @@ public class EscolheAcoesService {
     }
 
     public static boolean isAlive(Dinossauro skeep) {
-        List<BigDecimal> valoresMaiorQueZero = new ArrayList<>();
-        valoresMaiorQueZero.add(skeep.getVelocidade());
-        valoresMaiorQueZero.add(skeep.getEnergia());
-        valoresMaiorQueZero.add(skeep.getTemperatura());
+        List<BigDecimal> pontosPorAcao = new ArrayList<>();
+        pontosPorAcao.add(skeep.getVelocidade());
+        pontosPorAcao.add(skeep.getEnergia());
+        pontosPorAcao.add(skeep.getTemperatura());
 
-        return valoresMaiorQueZero.stream().allMatch(b -> b.compareTo(BigDecimal.ZERO) > 0);
+        return pontosPorAcao.stream().allMatch(b -> b.compareTo(BigDecimal.ZERO) > 0);
     }
 }
