@@ -1,15 +1,16 @@
 import dinossauro.Dinossauro;
-
-import static dinossauro.EscolheAcoesService.*;
+import dinossauro.EscolheAcoesService;
 
 public class Teste {
     public static void main(String[] args) {
 
+        EscolheAcoesService escolheAcoesService = new EscolheAcoesService();
+
         Dinossauro skeep = new Dinossauro();
         Dinossauro scan = new Dinossauro();
-        while (isAlive(skeep)) {
-            String option = abreMenu();
-            escolheAcao(skeep, option);
+        while (escolheAcoesService.estaVivo(skeep)) {
+            String option = escolheAcoesService.abreMenu();
+            escolheAcoesService.escolheAcao(skeep, option);
         }
         System.out.println("fim de jogo. Você perdeu");
     }
