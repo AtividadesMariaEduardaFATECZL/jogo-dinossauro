@@ -1,13 +1,6 @@
 import dinossauro.Dinossauro;
 
-import javax.swing.*;
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import static dinossauro.EscolheAcoesService.*;
-
 
 public class Teste {
     public static void main(String[] args) {
