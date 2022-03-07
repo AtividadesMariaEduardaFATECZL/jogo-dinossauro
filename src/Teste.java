@@ -3,7 +3,6 @@ import dinossauro.EscolheAcoesService;
 
 public class Teste {
     public static void main(String[] args) {
-
         EscolheAcoesService escolheAcoesService = new EscolheAcoesService();
 
         Dinossauro skeep = new Dinossauro();
