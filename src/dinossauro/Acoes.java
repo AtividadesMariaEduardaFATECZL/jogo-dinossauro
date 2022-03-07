@@ -2,39 +2,39 @@ package dinossauro;
 
 public enum Acoes {
 
-    A("cantar") {
+    A("Cantar") {
         @Override
         public void executa(Dinossauro dinossauro) {
             dinossauro.cantar();
-            System.out.println("Atual situação do dino " + dinossauro.toString());
+            System.out.println("Atual situação do dino " + dinossauro);
         }
     },
-    C("correr") {
+    C("Correr") {
         @Override
         public void executa(Dinossauro dinossauro) {
             dinossauro.correr();
-            System.out.println("Atual situação do dino " + dinossauro.toString());
+            System.out.println("Atual situação do dino " + dinossauro);
         }
     },
-    M("comer") {
+    M("Comer") {
         @Override
         public void executa(Dinossauro dinossauro) {
             dinossauro.comer();
-            System.out.println("Atual situação do dino " + dinossauro.toString());
+            System.out.println("Atual situação do dino " + dinossauro);
         }
     },
-    S("tomar sol") {
+    S("Tomar sol") {
         @Override
         public void executa(Dinossauro dinossauro) {
             dinossauro.tomarSol();
-            System.out.println("Atual situação do dino " + dinossauro.toString());
+            System.out.println("Atual situação do dino " + dinossauro);
         }
     },
-    O("ficar na sombra") {
+    O("Ficar na sombra") {
         @Override
         public void executa(Dinossauro dinossauro) {
             dinossauro.ficarNaSombra();
-            System.out.println("Atual situação do dino " + dinossauro.toString());
+            System.out.println("Atual situação do dino " + dinossauro);
         }
     };
 
