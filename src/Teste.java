@@ -1,3 +1,4 @@
+import dinossauro.Acoes;
 import dinossauro.Dinossauro;
 import dinossauro.EscolheAcoesService;
 
@@ -6,11 +7,12 @@ public class Teste {
         EscolheAcoesService escolheAcoesService = new EscolheAcoesService();
 
         Dinossauro skeep = new Dinossauro();
-        Dinossauro scan = new Dinossauro();
         while (escolheAcoesService.estaVivo(skeep)) {
             String option = escolheAcoesService.abreMenu();
-            escolheAcoesService.escolheAcao(skeep, option);
+            if (option != null) {
+                escolheAcoesService.escolheAcao(Acoes.valueOf(option.toUpperCase()),skeep);
+            }
         }
-        System.out.println("fim de jogo. Você perdeu");
+        System.out.println("Fim de jogo. Você perdeu");
     }
 }

@@ -6,14 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EscolheAcoesService {
-    public void escolheAcao(Dinossauro skeep, String option) {
-        DefineAcao defineAcao = new DefineAcao();
-        defineAcao.calcular(Acoes.valueOf(option.toUpperCase()),skeep);
-    }
-
     public String abreMenu() {
         return JOptionPane.showInputDialog(null, "Escolha uma letra para começar o jogo sendo: " +
                 "P(pular), C(correr), M (comer), A(cantar) S(tomar sol) e O(ficar na sombra)");
+    }
+
+    public void escolheAcao(Acoes acoes, Dinossauro dinossauro) {
+        acoes.executa(dinossauro);
     }
 
     public boolean estaVivo(Dinossauro skeep) {

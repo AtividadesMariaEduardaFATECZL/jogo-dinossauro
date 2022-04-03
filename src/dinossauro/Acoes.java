@@ -1,7 +1,6 @@
 package dinossauro;
 
 public enum Acoes {
-
     A("Cantar") {
         @Override
         public void executa(Dinossauro dinossauro) {
@@ -23,6 +22,13 @@ public enum Acoes {
             System.out.println("Atual situação do dino " + dinossauro);
         }
     },
+    O("Ficar na sombra") {
+        @Override
+        public void executa(Dinossauro dinossauro) {
+            dinossauro.ficarNaSombra();
+            System.out.println("Atual situação do dino " + dinossauro);
+        }
+    },
     S("Tomar sol") {
         @Override
         public void executa(Dinossauro dinossauro) {
@@ -30,10 +36,10 @@ public enum Acoes {
             System.out.println("Atual situação do dino " + dinossauro);
         }
     },
-    O("Ficar na sombra") {
+    P("Pular") {
         @Override
         public void executa(Dinossauro dinossauro) {
-            dinossauro.ficarNaSombra();
+            dinossauro.pular();
             System.out.println("Atual situação do dino " + dinossauro);
         }
     };
